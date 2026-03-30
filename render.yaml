@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: biomarkerdb
+    env: python
+    buildCommand: pip install flask gunicorn
+    startCommand: gunicorn app:app
